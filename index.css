@@ -1,7 +1,7 @@
 img{
     width: 250px;
     height:250px;
-    border: 1px solid black;
+    border: 5px solid black;
     margin: 10px;
     padding: 30px;
 }
@@ -9,3 +9,76 @@ img{
 h1 {
     text-align: center;
 }
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+
+/* Style  links inside nav bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 15px;
+  /* removes underline for links */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* changing color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* adding color to current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .trending {
+    float: left;
+    overflow: hidden;
+  }
+
+  .trending .trendingbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 15px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  .trending-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.trending-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+.trending-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .trending:hover .trending-content {
+    display: block;
+  }
