@@ -14,3 +14,4 @@ function removeClothing(){
     console.log('REMOVE THE CLOTHING')
     //puts all clothing items with check box to click
 }
+
