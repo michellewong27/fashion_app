@@ -15,15 +15,21 @@ function removeClothing(){
     //puts all clothing items with check box to click
 }
 
+const parentUl = document.getElementsByTagName("ul")[0]
+parentUl.addEventListener("click", function(event){
+    if(event.target.dataset.purpose === "increase"){
+        increaseScore(event)
+    }
+})
 
-let upVoteButtons = document.getElementsByClassName("up-vote");
-let upVoteArray = Array.from(upVoteButtons)
+// let upVoteButtons = document.getElementsByClassName("up-vote");
+// let upVoteArray = Array.from(upVoteButtons)
 
-upVoteArray.forEach(addScore);
+// upVoteArray.forEach(addScore);
 
-function addScore(button){
-    button.addEventListener("click", increaseScore)
-}
+// function addScore(button){
+//     button.addEventListener("click", increaseScore)
+// }
 
 function increaseScore(event){
     let parentLi= event.target.parentNode
