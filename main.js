@@ -15,7 +15,7 @@ document.body.addEventListener("click", function(event){
         `
         addClothingButton.remove()
         welcome.insertAdjacentElement("afterend", form)
-        // this.replaceChild(form,button)
+        // other option is - > this.replaceChild(form,button)
         form.addEventListener("submit", function(event){
             //grabbing inputs from form here
             event.preventDefault()
@@ -26,7 +26,7 @@ document.body.addEventListener("click", function(event){
             addItem(item)
             //making form disappear, bring back button
             form.remove()
-            welcome.insertAdjacentElement("afterend", button)
+            welcome.insertAdjacentElement("afterend", addClothingButton)
         })
     }
 })
