@@ -1,24 +1,28 @@
 {
-    "clothing": [
-        {
-            "id": 1,
-            "name": "Joggers" ,
-            "image": "https://lh3.googleusercontent.com/proxy/cvK1Y1eZB46Tlp9c0lJaYtV-7Eqzo32yxvkutIN-Q1Oc8nrlbx2fthChbcRQCXkznp8Sw-GcqJ-GB6IVlf5_tDa8XJL5FGghlOzppgbh3FXJbV0pZ1N1bSZ52XE-Sd9DA8snqr9dKZO3"
-        },
-        {
-            "id": 2,
-            "name": "White Button Down",
-            "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1567610453-tc-white-shirt-amazon-1567610445.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Sneakers",
-            "image": "https://images-na.ssl-images-amazon.com/images/I/71xnEgFgr6L._AC_UY695_.jpg"
-        },
-        {
-            "id": 4,
-            "name": "Sandals",
-            "image": "https://cdn.shopify.com/s/files/1/2170/8465/products/STEVEMADDEN-SANDALS_CICI_NUDE-LEATHER_large.jpg?v=1571609446"
-        }
-    ]
+  "clothing": [
+    {
+      "id": 1,
+      "likes": 0,
+      "name": "Joggers",
+      "image": "https://dks.scene7.com/is/image/GolfGalaxy/19QYFWFLCJGGRXXXXWAA_Forest_Night_Heather?qlt=70&wid=600&fmt=pjpeg"
+    },
+    {
+      "id": 2,
+      "likes": 0,
+      "name": "White Button Down",
+      "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1567610453-tc-white-shirt-amazon-1567610445.jpg"
+    },
+    {
+      "id": 3,
+      "likes": "5",
+      "name": "Sneakers",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71xnEgFgr6L._AC_UY695_.jpg"
+    },
+    {
+      "id": 4,
+      "likes": 0,
+      "name": "Sandals",
+      "image": "https://cdn.shopify.com/s/files/1/2170/8465/products/STEVEMADDEN-SANDALS_CICI_NUDE-LEATHER_large.jpg?v=1571609446"
+    }
+  ]
 }
