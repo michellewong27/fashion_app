@@ -5,6 +5,19 @@ let welcome = document.querySelector("h3")
 welcome.insertAdjacentElement("afterend", addClothingButton)
 
 
+function getClothing(){
+    //fetch always returns a promise
+    fetch("http://localhost:3000/clothing")
+    //want to turn response into json data we can read
+    .then(function(body) {return body.json() })
+    //now I have the data in correct form from dj.json file -> my clothing items
+        //calling the data "clothingArray" since thats what its returning
+    .then(function (clothingArray){
+        clothingArray.forEach(addItem)
+    })
+}
+getClothing()
+
 document.body.addEventListener("click", function(event){
     if(event.target.dataset.purpose === "form"){
         let form = document.createElement("form")
