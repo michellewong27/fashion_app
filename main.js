@@ -4,7 +4,6 @@ let addClothingButton = document.getElementById("add-clothing")
 let welcome = document.querySelector("h3")
 welcome.insertAdjacentElement("afterend", addClothingButton)
 
-
 function getClothing(){
     //fetch always returns a promise
     fetch("http://localhost:3000/clothing")
@@ -17,6 +16,17 @@ function getClothing(){
     })
 }
 getClothing()
+
+function persistItem(item){
+    fetch("http://localhost:3000/clothing", {
+        method:"POST",
+        headers: {
+            "content-type" : "application/json",
+            accepts : "application/json"
+        },
+        body: JSON.stringify(item)
+    })
+}
 
 document.body.addEventListener("click", function(event){
     if(event.target.dataset.purpose === "form"){
@@ -34,9 +44,11 @@ document.body.addEventListener("click", function(event){
             event.preventDefault()
             let item = {
                 name: event.target.name.value,
-                image: event.target.image.value
+                image: event.target.image.value,
+                likes: 0
             }
             addItem(item)
+            persistItem(item)
             //making form disappear, bring back button
             form.remove()
             welcome.insertAdjacentElement("afterend", addClothingButton)
@@ -57,9 +69,11 @@ function addItem(item){
     `
     parentUl.append(li)
 }
+clothingArray.forEach(addItem)
 
-//patch needs specific id
-function increaseLikes(id, likes){
+//patch needs specific id from clothing item
+//optimistic rendering to DOM (likes update on DOM before backend)
+function persistLikes(id, likes){
     console.log(id, likes)
     fetch(`http://localhost:3000/clothing/${id}`, {
         method: "PATCH",
@@ -69,7 +83,11 @@ function increaseLikes(id, likes){
         },
         body: JSON.stringify({likes: likes})
     })
-    
+//FOR PESAMISTIC RENDERING, you can add this instead:
+//this is where we get the data & THEN invoke changeScore to change likes 
+//on DOM after it's updated on backend
+    //.then(function(resp) {return resp.json() })
+    //.then(function(data) {changeScore(e) })
 }
 
 function changeScore(event){
@@ -84,6 +102,7 @@ function removeItem(event){
     let parentLi= event.target.parentNode;
     parentLi.remove()
 }
+
 
 
 parentUl.addEventListener("click", function(event){
