@@ -1,8 +1,8 @@
-const parentUl = document.getElementsByTagName("ul")[0]
-
-let addClothingButton = document.getElementById("add-clothing")
-let welcome = document.querySelector("h3")
-welcome.insertAdjacentElement("afterend", addClothingButton)
+const parentUl = document.getElementsByTagName("ul")[0];
+let clothingItems=[];
+let addClothingButton = document.getElementById("add-clothing");
+let welcome = document.querySelector("h3");
+welcome.insertAdjacentElement("afterend", addClothingButton);
 
 function getClothing(){
     //fetch always returns a promise
@@ -69,7 +69,7 @@ function addItem(item){
     `
     parentUl.append(li)
 }
-clothingArray.forEach(addItem)
+clothingItems.forEach(addItem)
 
 //patch needs specific id from clothing item
 //optimistic rendering to DOM (likes update on DOM before backend)
@@ -99,17 +99,29 @@ function changeScore(event){
 }
 
 function removeItem(event){
+    console.log("in remove item")
     let parentLi= event.target.parentNode;
     parentLi.remove()
 }
 
-
+function deleteItem(id, event){
+    console.log("in delete item")
+    fetch(`http://localhost:3000/clothing/${id}`, {
+        method: "DELETE",
+        headers: {
+            "content-type": "application/json",
+            "accepts": "application/json"
+        }
+    })
+    .then(function(){removeItem(event)})
+}
 
 parentUl.addEventListener("click", function(event){
     if (event.target.dataset.purpose === 'delete-item'){
-        removeItem(event)
+        console.log("CLICKED")
+        deleteItem(event.target.dataset.id, event)
     } else {
         changeScore(event)
-        increaseLikes(event.target.dataset.id, event.target.dataset.likes)
+        persistLikes(event.target.dataset.id, event.target.dataset.likes)
     }
 })
