@@ -1,12 +1,6 @@
 {
   "clothing": [
     {
-      "id": 1,
-      "likes": 0,
-      "name": "Joggers",
-      "image": "https://dks.scene7.com/is/image/GolfGalaxy/19QYFWFLCJGGRXXXXWAA_Forest_Night_Heather?qlt=70&wid=600&fmt=pjpeg"
-    },
-    {
       "id": 2,
       "likes": 0,
       "name": "White Button Down",
@@ -14,7 +8,7 @@
     },
     {
       "id": 3,
-      "likes": "5",
+      "likes": 0,
       "name": "Sneakers",
       "image": "https://images-na.ssl-images-amazon.com/images/I/71xnEgFgr6L._AC_UY695_.jpg"
     },
