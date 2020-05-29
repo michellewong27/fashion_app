@@ -1,18 +1,27 @@
 {
   "clothing": [
     {
+<<<<<<< HEAD
       "id": 1,
+=======
+      "id": 2,
+>>>>>>> 74d8602015ef05acb568ec3ac0986081ea7f3466
       "likes": 0,
       "name": "White Button Down",
       "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1567610453-tc-white-shirt-amazon-1567610445.jpg"
     },
     {
+<<<<<<< HEAD
       "id": 2,
+=======
+      "id": 3,
+>>>>>>> 74d8602015ef05acb568ec3ac0986081ea7f3466
       "likes": 0,
       "name": "Sneakers",
       "image": "https://images-na.ssl-images-amazon.com/images/I/71xnEgFgr6L._AC_UY695_.jpg"
     },
     {
+<<<<<<< HEAD
       "id": 3,
       "likes": 0,
       "name": "Sandals",
@@ -53,6 +62,12 @@
       "likes": 0,
       "name": "Black Tank Top",
       "image": "https://cdn.shopify.com/s/files/1/2596/9148/products/New-Arrival-2019-Fashion-Women-Summer-Tops-Casual-Sleeveless-Tank-Top-Loose-Plus-Size-Ladies-Big_800x.jpg?v=1576105134"
+=======
+      "id": 4,
+      "likes": 0,
+      "name": "Sandals",
+      "image": "https://cdn.shopify.com/s/files/1/2170/8465/products/STEVEMADDEN-SANDALS_CICI_NUDE-LEATHER_large.jpg?v=1571609446"
+>>>>>>> 74d8602015ef05acb568ec3ac0986081ea7f3466
     }
   ]
 }
