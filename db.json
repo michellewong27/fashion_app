@@ -1,0 +1,58 @@
+{
+  "clothing": [
+    {
+      "id": 1,
+      "likes": 0,
+      "name": "White Button Down",
+      "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1567610453-tc-white-shirt-amazon-1567610445.jpg"
+    },
+    {
+      "id": 2,
+      "likes": 0,
+      "name": "Sneakers",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71xnEgFgr6L._AC_UY695_.jpg"
+    },
+    {
+      "id": 3,
+      "likes": 0,
+      "name": "Sandals",
+      "image": "https://cdn.shopify.com/s/files/1/2170/8465/products/STEVEMADDEN-SANDALS_CICI_NUDE-LEATHER_large.jpg?v=1571609446"
+    },
+    {
+      "id": 4,
+      "likes": 0,
+      "name": "Jeans",
+      "image": "https://img.zolaprod.babsta.net/jZedc5JYTcaCjQrxlr02QcQBShk=/fit-in/375x395/efd919506a5c4e01891cda3efa696119"
+    },
+    {
+      "id": 5,
+      "likes": 0,
+      "name": "Jean Shorts",
+      "image": "https://35f0jq1fcotly82b3o727xi0-wpengine.netdna-ssl.com/wp-content/uploads/womens-denim-shorts-front-55-1-510x765.jpg"
+    },
+    {
+      "id": 6,
+      "likes": 0,
+      "name": "Summer Dress",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61JgldiUHzL._AC_UX342_.jpg"
+    },
+    {
+      "id": 7,
+      "likes": 0,
+      "name": "Blue Leggings",
+      "image": "https://www.rosendy.com/638-large_default/mesh-yoga-pants-women-s-workout-leggings-by-light-blue-cc189hhdq02.jpg"
+    },
+    {
+      "id": 8,
+      "likes": 0,
+      "name": "Biker Shorts",
+      "image": "https://slimages.macysassets.com/is/image/MCY/products/1/optimized/13533821_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$"
+    },
+    {
+      "id": 9,
+      "likes": 0,
+      "name": "Black Tank Top",
+      "image": "https://cdn.shopify.com/s/files/1/2596/9148/products/New-Arrival-2019-Fashion-Women-Summer-Tops-Casual-Sleeveless-Tank-Top-Loose-Plus-Size-Ladies-Big_800x.jpg?v=1576105134"
+    }
+  ]
+}
