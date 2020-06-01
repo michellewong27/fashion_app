@@ -1,7 +1,7 @@
 .clothing-item{
-    width: 45%;
+    width: 70%;
     border: 5px solid black;
-    margin: 10px 40px;
+    margin: 10px 50px;
     padding: 30px;
     display: inline-block;
     vertical-align: top;
@@ -12,8 +12,8 @@ h1 {
 }
 
 img{
-    width: 250px;
-    height:250px;
+    width: 80%;
+    height:60%;
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -92,5 +92,5 @@ img{
   }
 
   ul {
-    columns: 2;
+    columns: 3;
 }
