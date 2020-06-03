@@ -125,3 +125,5 @@ parentUl.addEventListener("click", function(event){
         persistLikes(event.target.dataset.id, event.target.dataset.likes)
     }
 })
+
+//generate outfit based on category
