@@ -127,3 +127,6 @@ parentUl.addEventListener("click", function(event){
 })
 
 //generate outfit based on category
+// on click of generate outfit button, top bottom and shoes button (so you can click which you want to generate)
+    //randomly select item from tops, bottoms and shoes
+    //OR generate only top/ bottom/ shoes 
